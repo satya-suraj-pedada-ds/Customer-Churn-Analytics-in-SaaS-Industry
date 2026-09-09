@@ -82,6 +82,7 @@ Problems: HTML tags, emojis, truncated lines, N/A / NULL, mixed ID prefixes (XC�
 ### Clean outputs
 - customer_clean.csv — standardized labels, Annual_Spend, Tenure_Group, Signup_Year
 - interviews_classified.csv — cleaned text, usable, primary_reason, mood, reason flags
+
 Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
   
 
