@@ -92,9 +92,8 @@ Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
 4. Label interviews with a fixed keyword lexicon (not a trained LLM):
    - Reasons: Price, Value, Support, Product, Performance, Onboarding, Competitor, Unclassified
    - Moods: Angry, Frustrated, Disappointed, Neutral, Hopeful, PositiveShort or empty text → Unclassified / Neutral. No invented complaints.
-5. Segments — churn rate and churned ARR by plan, tenure group, region, ticket count.
-6. Optional baseline — logistic regression on plan / tenure / tickets to rank risk. This is a check, not the product.
-7. Power BI — four pages, shared slicers (Plan, Region, Tenure, Signup Year).
+5. Segments — churn rate and churned ARR by plan, tenure group, region, ticket count
+6. Power BI — four pages, shared slicers (Plan, Region, Tenure, Signup Year).
 
 ## Power BI Pages
 
