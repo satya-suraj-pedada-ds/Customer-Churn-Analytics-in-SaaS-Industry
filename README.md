@@ -107,6 +107,21 @@ Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
 
 Screenshots live in BI Dashboard Images/.
 
+## How to rerun
+Python 3.10+ with pandas, numpy, matplotlib, scikit-learn. Power BI Desktop to open the .pbix.
+
+1. Put the two dirty CSVs under data/raw/ (or edit the DATA path in the first notebook cell).
+2. Open Notebook/Customer Churn Analytics in SaaS Industry.ipynb and Run All.
+3. Clean files write to outputs/ (copy them into data/processed/ if you keep that folder).
+4. Open the .pbix. If paths break: Transform data → Data source settings → Change Source.
+5. Do not mix the notebook 20.91% print with dashboard cards. Published rate is 20.78%.
+
+## Honest limits
+- Interview labels are rules + keywords, not a fine-tuned language model. Say “lexicon classification,” not “AI detected emotion.”
+- Many replies mention more than one theme. primary_reason is the first matched theme, not the only theme. Flag columns keep the rest.
+- Competitor and Onboarding counts are small. Do not build a strategy only on n = 12.
+- 0–6 months × 7 tickets is a thin cell. The save rule uses 4+ tickets, not one empty cell.
+- Notebook and Power BI row counts differ by design (see the first paragraph).
 
 
 
