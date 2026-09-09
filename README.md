@@ -66,7 +66,7 @@ Customer-Churn-Analytics-in-SaaS-Industry/
     ├── Dashboard-3 Why Customers Leave.jpg
     └── Dashboard-4 Mood Of Departing Customers.jpg
 
-Data
+## Data
 Customers (dirty ~95k)
 
 Customer_ID, Age, Gender, Region, Tenure_Months, Subscription_Type, Monthly_Spend, Support_Tickets, Churn_Flag, Signup_Date
