@@ -84,6 +84,18 @@ Problems: HTML tags, emojis, truncated lines, N/A / NULL, mixed ID prefixes (XC�
 - interviews_classified.csv — cleaned text, usable, primary_reason, mood, reason flags
 
 Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
+
+Method
+
+1. Inspect raw row counts, missingness, duplicate IDs, raw churn labels.
+2. Clean customers — drop exact duplicate rows, resolve colliding IDs, map gender/region/plan, clip age and tenure, set negative tickets to 0, parse mixed dates, leave blank churn as missing.
+3. Clean text — strip HTML and junk tokens, mark short/empty replies as not usable.
+4. Label interviews with a fixed keyword lexicon (not a trained LLM):
+   - Reasons: Price, Value, Support, Product, Performance, Onboarding, Competitor, Unclassified
+   - Moods: Angry, Frustrated, Disappointed, Neutral, Hopeful, PositiveShort or empty text → Unclassified / Neutral. No invented complaints.
+5. Segments — churn rate and churned ARR by plan, tenure group, region, ticket count.
+6. Optional baseline — logistic regression on plan / tenure / tickets to rank risk. This is a check, not the product.
+7. Power BI — four pages, shared slicers (Plan, Region, Tenure, Signup Year).
   
 
 
