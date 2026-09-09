@@ -65,3 +65,19 @@ Customer-Churn-Analytics-in-SaaS-Industry/
     ├── Dashboard-2 Who Is High Risk.jpg
     ├── Dashboard-3 Why Customers Leave.jpg
     └── Dashboard-4 Mood Of Departing Customers.jpg
+
+Data
+Customers (dirty ~95k)
+
+Customer_ID, Age, Gender, Region, Tenure_Months, Subscription_Type, Monthly_Spend, Support_Tickets, Churn_Flag, Signup_Date
+Problems in the raw file: mixed churn labels (0/1/Yes/No), duplicate rows and IDs, invalid ages, negative tenure and tickets, plan aliases (mid, STD, gold), region aliases (Nrt, Ctr), currency symbols inside spend, blank churn flags.
+Exit interviews (dirty ~3.5k)
+
+Customer_ID, Churn_Flag, Exit_Reason_Text
+Problems: HTML tags, emojis, truncated lines, N/A / NULL, mixed ID prefixes (XC…).
+Clean outputs
+
+customer_clean.csv — standardized labels, Annual_Spend, Tenure_Group, Signup_Year
+interviews_classified.csv — cleaned text, usable, primary_reason, mood, reason flags
+
+Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
