@@ -67,7 +67,7 @@ Customer-Churn-Analytics-in-SaaS-Industry/
     ├── Dashboard-2 Who Is High Risk.jpg
     ├── Dashboard-3 Why Customers Leave.jpg
     └── Dashboard-4 Mood Of Departing Customers.jpg
-...
+```
 
 
 ## Data
