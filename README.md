@@ -2,7 +2,7 @@
 
 End-to-end analysis of ~95,000 SaaS accounts and ~3,500 exit interviews: clean dirty data, find who is at risk, classify why they left, and turn that into a 4-page Power BI story with three actions.
 
-**Published dashboard figures (use these on slides and resume):**  
+**Published Dashboard Figures (use these on slides and resume):**  
 94,687 accounts · 19,676 churned · **20.78%** churn · **₹8.48M** churned ARR
 
 Notebook rate on all known churn flags is 20.91% on 94,419. Power Query drops extra incomplete rows before the model. This repo treats **20.78%** as the official number.
@@ -75,11 +75,11 @@ Customer-Churn-Analytics-in-SaaS-Industry/
 Customer_ID, Age, Gender, Region, Tenure_Months, Subscription_Type, Monthly_Spend, Support_Tickets, Churn_Flag, Signup_Date
 Problems in the raw file: mixed churn labels (0/1/Yes/No), duplicate rows and IDs, invalid ages, negative tenure and tickets, plan aliases (mid, STD, gold), region aliases (Nrt, Ctr), currency symbols inside spend, blank churn flags.
 
-### Exit interviews (dirty ~3.5k)
+### Exit Interviews (dirty ~3.5k)
 Customer_ID, Churn_Flag, Exit_Reason_Text
 Problems: HTML tags, emojis, truncated lines, N/A / NULL, mixed ID prefixes (XC…).
 
-### Clean outputs
+### Clean Outputs
 - customer_clean.csv — standardized labels, Annual_Spend, Tenure_Group, Signup_Year
 - interviews_classified.csv — cleaned text, usable, primary_reason, mood, reason flags
 
@@ -96,7 +96,7 @@ Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
 6. Optional baseline — logistic regression on plan / tenure / tickets to rank risk. This is a check, not the product.
 7. Power BI — four pages, shared slicers (Plan, Region, Tenure, Signup Year).
 
-## Power BI pages
+## Power BI Pages
 
 | Page | What it answers |
 | --- | --- |
@@ -123,6 +123,16 @@ Python 3.10+ with pandas, numpy, matplotlib, scikit-learn. Power BI Desktop to o
 - 0–6 months × 7 tickets is a thin cell. The save rule uses 4+ tickets, not one empty cell.
 - Notebook and Power BI row counts differ by design (see the first paragraph).
 
+## Resume line
+Analyzed 95k SaaS accounts and 3.5k exit interviews; published 20.78% churn and ₹8.48M lost ARR; isolated 0–6 month + 4+ ticket risk and split Price vs Value so retention does not rely on blanket discounts.
+
+## talk track 
+
+Churn is 20.8% and flat by signup year — not a one-year spike.
+Rate is highest on Basic/Standard and in month 0–6; money is highest on Premium.
+Tickets stay near 21% until 4+, then the rate jumps.
+Exit text is Value and Price, almost tied. Frustrated is the main mood.
+Three actions: onboarding save list, Price vs Value playbooks, 4-ticket weekly queue.
 
 
 
