@@ -85,8 +85,7 @@ Problems: HTML tags, emojis, truncated lines, N/A / NULL, mixed ID prefixes (XC�
 
 Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
 
-Method
-
+## Method
 1. Inspect raw row counts, missingness, duplicate IDs, raw churn labels.
 2. Clean customers — drop exact duplicate rows, resolve colliding IDs, map gender/region/plan, clip age and tenure, set negative tickets to 0, parse mixed dates, leave blank churn as missing.
 3. Clean text — strip HTML and junk tokens, mark short/empty replies as not usable.
