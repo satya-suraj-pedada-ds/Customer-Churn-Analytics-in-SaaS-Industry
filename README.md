@@ -9,7 +9,7 @@ Notebook rate on all known churn flags is 20.91% on 94,419. Power Query drops ex
 
 GitHub: https://github.com/satya-suraj-pedada-ds/Customer-Churn-Analytics-in-SaaS-Industry
 
-## Why this project exists
+## Why This Project Exists
 
 Management saw customers leaving. The brief was:
 
@@ -21,7 +21,7 @@ Management saw customers leaving. The brief was:
 
 This is a junior data analyst project: cleaning, metrics, segments, text labels, dashboard, write-up. It is not a production ML product.
 
-## Headline findings (dashboard)
+## Headline Findings (dashboard)
 
 | Finding | Number |
 |---|---|
@@ -40,13 +40,13 @@ Price = “too expensive.” Value = “not worth it / no ROI.” They are almos
 ...
 
 
-## Three actions
+## Three Actions
 
 1. Save list first: 0–6 month accounts with **4+ support tickets** (onboarding + 48-hour reply SLA).
 2. Split Price vs Value. Discount only Price. For Value, show usage and ROI, not a coupon.
 3. Weekly queue: every account that crosses 4 tickets, regardless of tenure.
 
-## Repo layout
+## Repo Layout
 
 ```text
 Customer-Churn-Analytics-in-SaaS-Industry/
@@ -107,7 +107,7 @@ Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
 
 Screenshots live in BI Dashboard Images/.
 
-## How to rerun
+## How To Rerun
 Python 3.10+ with pandas, numpy, matplotlib, scikit-learn. Power BI Desktop to open the .pbix.
 
 1. Put the two dirty CSVs under data/raw/ (or edit the DATA path in the first notebook cell).
@@ -116,23 +116,25 @@ Python 3.10+ with pandas, numpy, matplotlib, scikit-learn. Power BI Desktop to o
 4. Open the .pbix. If paths break: Transform data → Data source settings → Change Source.
 5. Do not mix the notebook 20.91% print with dashboard cards. Published rate is 20.78%.
 
-## Honest limits
+## Honest Limits
 - Interview labels are rules + keywords, not a fine-tuned language model. Say “lexicon classification,” not “AI detected emotion.”
 - Many replies mention more than one theme. primary_reason is the first matched theme, not the only theme. Flag columns keep the rest.
 - Competitor and Onboarding counts are small. Do not build a strategy only on n = 12.
 - 0–6 months × 7 tickets is a thin cell. The save rule uses 4+ tickets, not one empty cell.
 - Notebook and Power BI row counts differ by design (see the first paragraph).
 
-## Resume line
+## Resume Line
 Analyzed 95k SaaS accounts and 3.5k exit interviews; published 20.78% churn and ₹8.48M lost ARR; isolated 0–6 month + 4+ ticket risk and split Price vs Value so retention does not rely on blanket discounts.
 
-## talk track 
+## Talk Track 
+1. Churn is 20.8% and flat by signup year — not a one-year spike.
+2. Rate is highest on Basic/Standard and in month 0–6; money is highest on Premium.
+3. Tickets stay near 21% until 4+, then the rate jumps.
+4. Exit text is Value and Price, almost tied. Frustrated is the main mood.
+5. Three actions: onboarding save list, Price vs Value playbooks, 4-ticket weekly queue.
 
-Churn is 20.8% and flat by signup year — not a one-year spike.
-Rate is highest on Basic/Standard and in month 0–6; money is highest on Premium.
-Tickets stay near 21% until 4+, then the rate jumps.
-Exit text is Value and Price, almost tied. Frustrated is the main mood.
-Three actions: onboarding save list, Price vs Value playbooks, 4-ticket weekly queue.
+## Data Note
+IT is assignment datasets. Not a live customer database. Do not present these IDs as real production accounts.
 
 
 
