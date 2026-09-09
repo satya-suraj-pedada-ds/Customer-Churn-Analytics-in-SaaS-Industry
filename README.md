@@ -37,6 +37,8 @@ This is a junior data analyst project: cleaning, metrics, segments, text labels,
 | Mood | **Frustrated 65.74%** · Disappointed 21.19% |
 
 Price = “too expensive.” Value = “not worth it / no ROI.” They are almost the same size. A coupon does not fix Value.
+...
+
 
 ## Three actions
 
