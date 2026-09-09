@@ -71,7 +71,7 @@ Customer-Churn-Analytics-in-SaaS-Industry/
 
 
 ## Data
-Customers (dirty ~95k)
+### Customers (dirty ~95k)
 
 Customer_ID, Age, Gender, Region, Tenure_Months, Subscription_Type, Monthly_Spend, Support_Tickets, Churn_Flag, Signup_Date
 Problems in the raw file: mixed churn labels (0/1/Yes/No), duplicate rows and IDs, invalid ages, negative tenure and tickets, plan aliases (mid, STD, gold), region aliases (Nrt, Ctr), currency symbols inside spend, blank churn flags.
@@ -85,3 +85,9 @@ customer_clean.csv — standardized labels, Annual_Spend, Tenure_Group, Signup_Y
 interviews_classified.csv — cleaned text, usable, primary_reason, mood, reason flags
 
 Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
+
+
+
+
+
+
