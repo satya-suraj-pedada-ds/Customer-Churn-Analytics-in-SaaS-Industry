@@ -97,7 +97,6 @@ Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
 7. Power BI — four pages, shared slicers (Plan, Region, Tenure, Signup Year).
 
 ## Power BI pages
-## Power BI pages
 
 | Page | What it answers |
 | --- | --- |
