@@ -104,6 +104,7 @@ Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
 | 2 · Who Is High Risk? | Basic/Standard rate, 0–6 month spike, 4+ ticket jump, tenure × tickets grid |
 | 3 · Why Customers Leave | Value ≈ Price as primary reason; Support is third |
 | 4 · Mood of Departing Customers | Frustrated is ~2 in 3 labeled replies; Price and Value hold almost all Disappointed comments |
+
 Screenshots live in BI Dashboard Images/.
 
 
