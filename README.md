@@ -122,16 +122,6 @@ Python 3.10+ with pandas, numpy, matplotlib. Power BI Desktop to open the .pbix.
 - 0–6 months × 7 tickets is a thin cell. The save rule uses 4+ tickets, not one empty cell.
 - Notebook and Power BI row counts differ by design (see the first paragraph).
 
-## Resume Line
-Analyzed 95k SaaS accounts and 3.5k exit interviews; published 20.78% churn and ₹8.48M lost ARR; isolated 0–6 month + 4+ ticket risk and split Price vs Value so retention does not rely on blanket discounts.
-
-## Talk Track 
-1. Churn is 20.8% and flat by signup year — not a one-year spike.
-2. Rate is highest on Basic/Standard and in month 0–6; money is highest on Premium.
-3. Tickets stay near 21% until 4+, then the rate jumps.
-4. Exit text is Value and Price, almost tied. Frustrated is the main mood.
-5. Three actions: onboarding save list, Price vs Value playbooks, 4-ticket weekly queue.
-
 ## Data Note
 IT is assignment datasets. Not a live customer database. Do not present these IDs as real production accounts.
 
