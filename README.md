@@ -54,10 +54,10 @@ Customer-Churn-Analytics-in-SaaS-Industry/
 ├── Notebook/
 │   └── Customer Churn Analytics in SaaS Industry.ipynb
 ├── data/
-│   ├── raw/                  # dirty source files
+│   ├── raw data/                  # dirty source files
 │   │   ├── churn_customers_95k_dirty.csv
 │   │   └── churn_exit_interviews_3500_dirty.csv
-│   └── processed/            # notebook exports used in Power BI
+│   └── processed data/            # notebook exports used in Power BI
 │       ├── customer_clean.csv
 │       └── interviews_classified.csv
 ├── Power BI/
