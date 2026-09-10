@@ -107,7 +107,7 @@ Churn_Flag blanks were not imputed. Rate is calculated only on known flags.
 Screenshots live in BI Dashboard Images/.
 
 ## How To Rerun
-Python 3.10+ with pandas, numpy, matplotlib, scikit-learn. Power BI Desktop to open the .pbix.
+Python 3.10+ with pandas, numpy, matplotlib. Power BI Desktop to open the .pbix.
 
 1. Put the two dirty CSVs under data/raw/ (or edit the DATA path in the first notebook cell).
 2. Open Notebook/Customer Churn Analytics in SaaS Industry.ipynb and Run All.
